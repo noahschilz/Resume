@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+*{
+    padding: 1px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: white;
+    --text-color: #000000;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background-color: #051721 ;
+    color: white;
+}
+
+img{
+    width: 100%;
+    border-radius: 50%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.description{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: White;
+    margin-bottom:5px;
+}
+.title{
+    font-size:1.5rem;
+    color: #89cff0;
+}
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: #182138;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+@media only screen and (max-width: 760px){
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+
+.profile{
+    grid-column: 1 / -1;
+    margin-bottom: 0rem;
+}
+
+.group-1{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.profile_container{
+    display: flex;
+    gap: 2rem;
+}
+
+.profile_profileImg{
+    max-width: 250px;
+}
+
+.profile_name_firstname{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    display: block;
+    margin-bottom: -0.8rem
+}
+.profile_name_lastname{
+    color: #89cff0;
+    font-size: clamp(2.5rem, 15vw, 6rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+
+.profile_title{
+    font-size:1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.downloadBtn{
+    background-color:#051721;
+    text-align: center;
+    border-color: #89cff0;
+    border-style:solid;
+    border-radius: 20px;
+    width: 40mm;
+    color: white;
+    padding: 10px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}
+.downloadBtn:hover{
+    animation: bounce 1s;
+    border-color: white;
+}
+
+@media only screen and (max-width: 678px){
+    .profile_container{
+        flex-direction: column;
+    }
+}
+
+.skill_list{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    line-height: 1.5;
+}
+
+.nestedList{
+    margin-left: 20px;
+}
+
+.education_title{
+    margin-top: 1rem;
+    color:rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+.cert_description{
+    margin-top:1rem;
+}
+
+.leaderExp{
+    margin-left: 10px;
+}

@@ -30,6 +30,7 @@ a {
     color: white;
 }
 .description{
+    display: flex;
     margin-top: 1rem;
     font-size: 1.2rem;
     font-weight: 400;
@@ -40,12 +41,24 @@ a {
     font-size:1.5rem;
     color: #89cff0;
 }
-.container{
+.nav_bar{
     max-width: 1000px;
     width: 90%;
     margin: 0 auto;
+    padding-top: 2rem;
+    padding-right: 2rem;
     display: grid;
+    background: #182138;
+    gap: 2rem;
+}
+
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin:0 auto;
     padding: 5rem;
+    padding-top: 1rem;
+    display: grid;
     background: #182138;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -54,6 +67,13 @@ a {
 @media only screen and (max-width: 760px){
     .profile_container{
         flex-direction: column;
+    }
+    .nav_bar{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        gap: 3rem;
     }
     .container{
         width: 100%;

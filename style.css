@@ -56,7 +56,23 @@ a {
         width: 100%;
         grid-template-columns: 1fr;
         padding: 3rem;
-        gap: 7rem;
+        gap: 3rem;
+    }
+    .profile_profileImg{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile_name_firstname{
+        text-align: center;
+    }
+    .profile_name_lastname{
+        text-align:center;
+    }
+    .profile_title{
+        text-align:center;
+    }
+    .description{
+        text-align: center;
     }
 }
 

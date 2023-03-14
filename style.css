@@ -52,6 +52,9 @@ a {
 }
 
 @media only screen and (max-width: 760px){
+    .profile_container{
+        flex-direction: column;
+    }
     .container{
         width: 100%;
         grid-template-columns: 1fr;
@@ -86,6 +89,13 @@ a {
     flex-direction: column;
     gap: 0rem;
 }
+
+.group-2{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
 .profile_container{
     display: flex;
     gap: 2rem;
@@ -132,6 +142,18 @@ a {
     margin-top: 15px;
 }
 
+.contactBtn{
+    background-color:#051721;
+    text-align: center;
+    border-color: #89cff0;
+    border-style:solid;
+    color: white;
+    width: 30mm;
+    height: 7mm;
+    border-radius: 15mm;
+    margin: 1 rem
+}
+
 @keyframes bounce {
 	0%, 20%, 60%, 100% {
 		-webkit-transform: translateY(0);
@@ -151,12 +173,6 @@ a {
 .downloadBtn:hover{
     animation: bounce 1s;
     border-color: white;
-}
-
-@media only screen and (max-width: 678px){
-    .profile_container{
-        flex-direction: column;
-    }
 }
 
 .skill_list{
@@ -192,4 +208,28 @@ a {
 
 .indentList{
     margin-left: 10px;
+}
+
+.item_date{
+    color: lightslategray;
+}
+
+.nestedList_date{
+    margin-left: 20px;
+    color: lightslategray;
+}
+
+.item_subtitle{
+    margin-bottom: .5rem;
+}
+
+.contact_list li{
+    display:inline;
+    text-align: right;
+    float:right;
+    margin: .5rem;
+}
+
+.contact_item:hover{
+    animation: bounce 1s;
 }

@@ -71,6 +71,18 @@ a {
     gap: 2rem;
 }
 
+.contact_list li{
+    display:inline;
+    text-align: right;
+    float:right;
+    margin: .5rem;
+}
+
+.contact_item:hover{
+    color: #89cff0;
+    animation: bounce 1s;
+}
+
 .container{
     max-width: 1000px;
     width: 90%;
@@ -81,45 +93,6 @@ a {
     background: #182138;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-}
-
-@media only screen and (max-width: 760px){
-
-    .group-1{
-        padding-top: 2rem;
-    }
-    .profile_container{
-        flex-direction: column;
-    }
-    .nav_bar{
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding-top: 2rem;
-        padding-right: 2rem;
-        gap: 3rem;
-    }
-    .container{
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding: 3rem;
-        gap: 0rem;
-    }
-    .profile_profileImg{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .profile_name_firstname{
-        text-align: center;
-    }
-    .profile_name_lastname{
-        text-align:center;
-    }
-    .profile_title{
-        text-align:center;
-    }
-    .description{
-        text-align: center;
-    }
 }
 
 .profile{
@@ -200,6 +173,7 @@ a {
 		-webkit-transform: translateY(-5px);
 		transform: translateY(-5px);
 	}
+
 }
 .downloadBtn:hover{
     animation: bounce 1s;
@@ -269,15 +243,53 @@ hr{
     margin-bottom: .5rem;
 }
 
-.contact_list li{
-    display:inline;
-    text-align: right;
-    float:right;
-    margin: .5rem;
-}
+@media only screen and (max-width: 760px){
+    img:hover{
+        transform:none;
+    }
 
-.contact_item:hover{
-    color: #89cff0;
-    text-shadow: 0 0 5px #89cff0;
-    animation: bounce 1s;
+    .contact_item:hover{
+        animation:none;
+        color:white;
+    }
+
+    .downloadBtn:hover{
+        animation:none;
+    }
+
+    .group-1{
+        padding-top: 2rem;
+    }
+    .profile_container{
+        flex-direction: column;
+    }
+    .nav_bar{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        gap: 3rem;
+    }
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 0rem;
+    }
+    .profile_profileImg{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile_name_firstname{
+        text-align: center;
+    }
+    .profile_name_lastname{
+        text-align:center;
+    }
+    .profile_title{
+        text-align:center;
+    }
+    .description{
+        text-align: center;
+    }
 }

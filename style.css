@@ -84,6 +84,10 @@ a {
 }
 
 @media only screen and (max-width: 760px){
+
+    .group-1{
+        padding-top: 2rem;
+    }
     .profile_container{
         flex-direction: column;
     }
@@ -98,7 +102,7 @@ a {
         width: 100%;
         grid-template-columns: 1fr;
         padding: 3rem;
-        gap: 3rem;
+        gap: 0rem;
     }
     .profile_profileImg{
         margin-left: auto;
@@ -178,19 +182,7 @@ a {
     display:block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
-}
-
-.contactBtn{
-    background-color:#051721;
-    text-align: center;
-    border-color: #89cff0;
-    border-style:solid;
-    color: white;
-    width: 30mm;
-    height: 7mm;
-    border-radius: 15mm;
-    margin: 1 rem
+    margin-top: 20px;
 }
 
 @keyframes bounce {

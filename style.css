@@ -195,6 +195,21 @@ a {
     border-color: white;
 }
 
+hr{
+    width: 100%;
+    margin-top: 2rem;
+    animation:separator-width 1.2s;
+}
+
+@keyframes separator-width {
+  0% {
+    transform:scaleX(0)
+  }
+  100% {
+    transform:scaleX(100%)
+  }
+}
+
 .skill_list{
     margin-top: .5rem;
     margin-left: 1rem;
@@ -251,5 +266,7 @@ a {
 }
 
 .contact_item:hover{
+    color: #89cff0;
+    text-shadow: 0 0 5px #89cff0;
     animation: bounce 1s;
 }
